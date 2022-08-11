@@ -1,0 +1,27 @@
+name: Jest CI
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Libraries
+        run: npm Install
+      - name: Test Run
+        run: npm run test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Libraries
+        run: npm Install
+      - name: Lint
+        run: npm run lint
