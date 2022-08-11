@@ -1,0 +1,27 @@
+{
+  "name": "simpledb-ts",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --cache --fix . && prettier .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.224",
+    "@swc/jest": "^0.2.22",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
