@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Libraries
-        run: npm Install
+        run: npm install
       - name: Test Run
         run: npm run test
   lint:
